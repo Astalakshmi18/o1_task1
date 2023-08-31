@@ -1,0 +1,223 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website Development Company</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="{% static 'styles.css' %}">
+  <script src="https://kit.fontawesome.com/0e943d31a2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!--Nav Bar-->
+    <header>
+        <div class="logo">TBM</div>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="search">
+            <i class="fa-solid fa-magnifying-glass" id="search"></i>
+            <input type="text" class="input" placeholder="Search here....">
+        </div>
+    </header>
+
+<!--Button-->
+  <div class="jumbotron " id="home">
+    <div class="container">
+      <h1 class="display-4">Top Brands Media</h1>
+      <p class="lead">We create stunning and responsive websites <br>to help your business succeed.</p>
+      <a href="#contact" id="btn" class="btn btn-primary btn-lg ">Get in touch</a>
+    </div>
+  </div>
+  <!--Horizontal Loop Scroll-->
+  <marquee class="scroll-bar" behavior="scroll" direction="left" onmouseover="this.stop();" onmouseout="this.start();">
+        <h2>We are Hiring!..<span></span>We are Hiring!..<span></span>We are Hiring!..<span></span>We are Hiring!..<span></span>We are Hiring!..<span></span>We are Hiring!..<span></span>We are Hiring!..<span></span>We are Hiring!..<span></span>We are Hiring!..<span></span> </h2> 
+  </marquee>
+  <!--Services-->
+  <section class="services" id="services">
+    <div class="container">
+      <h2 class="text-center">Our Services</h2>
+      <div class="row">
+        <div class="col-md-4 col-4">
+          <div class="card">
+            <div class="card-body">
+              <img src="https://www.simplilearn.com/ice9/free_resources_article_thumb/How_to_Learn_Web_Designing.jpg">
+              <h5 class="card-title">Web Design</h5>
+              <p class="card-text">We create beautiful and user-friendly website designs tailored to your needs.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-4">
+          <div class="card">
+            <div class="card-body">
+              <img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20200203200336/13-Things-You-Should-Know-Before-You-Enter-In-Web-Development.png">
+              <h5 class="card-title">Web Development</h5>
+              <p class="card-text">Our expert developers turn designs into fully functional websites using the latest technologies.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-4">
+          <div class="card">
+            <div class="card-body">
+              <img src="https://thumbs.dreamstime.com/z/banner-illustration-e-commerce-icon-set-e-commerce-background-icon-illustration-banner-209696030.jpg">
+              <h5 class="card-title">E-commerce Solutions</h5>
+              <p class="card-text">We build secure and scalable e-commerce platforms to help you sell your products online.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- About -->
+
+  <section class="about" id="about">
+    <div class="container">
+      <h2 class="text-center">About Us</h2>
+      <p>Top Brands Media is a dynamic Venture and Product Lab, leading the way in digital innovation. Our mission is to build robust platforms and marketplaces that revolutionize the way businesses connect with their customers. As a team of visionary minds, we foster innovation, entrepreneurship, and creativity to launch disruptive products and services that transform industries.</p>
+      <!-- <p>At Top Brands Media, we envision a world where cutting-edge technology meets creativity, empowering businesses to thrive in the digital landscape. Our vision is to be the catalyst for positive change, creating innovative solutions and forward-thinking strategies that redefine industries and drive sustainable growth.</p> -->
+    </div>
+  </section>
+
+<!-- Counter -->
+
+  <section>
+    <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-6 col-6 left-half">
+        <img src="https://www.nti-audio.com/Portals/0/EasyDNNnews/511/Job_PC_Software_Developer.jpg" alt="Image">
+      </div>
+      <div class="col-md-6 col-6 right-half">
+        <div class="row">
+          <div class="col col-md-6 col-6">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Clients</h5>
+                <div class="counter">
+                    <p class="count" data-val="500"></p>
+                    <span>+</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col col-md-6 col-6">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Employees</h5>
+                <div class="counter">
+                    <p class="count" data-val="300"></p>
+                    <span>+</span>
+                </div> 
+              </div>
+            </div>
+          </div>
+          <div class="col col-md-6 col-6">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Projects</h5>
+                <div class="counter">
+                    <p class="count" data-val="50"></p>
+                    <span>+</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col col-md-6 col-6">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Experiences</h5>
+                <div class="counter">
+                    <p class="count" data-val="30"></p>
+                    <span>+</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+<!--Contact-->
+  <section class="contact" id="contact">
+    <div class="container">
+      <h2 class="text-center">Contact Us</h2>
+      <form>
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" class="form-control" id="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" class="form-control" id="email" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea class="form-control" id="message" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+      </form>
+    </div>
+  </section>
+<footer>
+  <section class="footer">
+      <div class="box">
+          <h1>Top Brands Media</h1>
+          <h5>Chennai</h5>
+          <h1>Follow Us</h1>
+          <a href="https://www.instagram.com/topbrandsmedia/?hl=en" class="fa fa-instagram"></a>
+          <a href="https://www.linkedin.com/company/topbrandsmedia/" class="fa fa-linkedin"></a>
+          <a href="https://m.facebook.com/TopBrandsMedia/" class="fa fa-facebook"></a>
+      </div>
+      <hr>
+      <p>&copy; 2023 Top Brands Media. All rights reserved.</p>
+  </section>
+</footer>
+
+  <!-- Bootstrap JS and jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script type="text/javascript">
+        hamburger = document.querySelector(".hamburger");
+        hamburger.onclick = function() {
+            navBar = document.querySelector(".nav-bar");
+            navBar.classList.toggle("active");
+            navBar = document.querySelector(".search");
+            navBar.classList.toggle("active");
+        }
+
+        let valueDisplays = document.querySelectorAll(".count");
+        let interval = 5000;
+
+        valueDisplays.forEach((valueDisplay) =>{
+          let startValue = 0;
+          let endValue = parseInt(valueDisplay.getAttribute("data-val"));
+          let duration = Math.floor(interval / endValue);
+          let counter = setInterval(function(){
+            startValue += 1;
+            valueDisplay.textContent = startValue;
+            if(startValue == endValue){
+              clearInterval(counter);
+            }
+          },duration);
+        })
+  </script>
+</body>
+</html>
